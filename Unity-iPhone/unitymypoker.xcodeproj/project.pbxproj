@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0E26AAB2BF48FFA0015A312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26AAA2BF48FFA0015A312 /* AppDelegate.m */; };
+		E0E26AB12BF48FFA0015A312 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26AB02BF48FFA0015A312 /* ViewController.m */; };
+		E0E26AB42BF48FFA0015A312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E26AB22BF48FFA0015A312 /* Main.storyboard */; };
+		E0E26AB62BF48FFB0015A312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E26AB52BF48FFB0015A312 /* Assets.xcassets */; };
+		E0E26AB92BF48FFB0015A312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E26AB72BF48FFB0015A312 /* LaunchScreen.storyboard */; };
+		E0E26ABC2BF48FFB0015A312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26ABB2BF48FFB0015A312 /* main.m */; };
+		E0E26AC62BF48FFB0015A312 /* unitymypokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26AC52BF48FFB0015A312 /* unitymypokerTests.m */; };
+		E0E26AD02BF48FFB0015A312 /* unitymypokerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26ACF2BF48FFB0015A312 /* unitymypokerUITests.m */; };
+		E0E26AD22BF48FFB0015A312 /* unitymypokerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26AD12BF48FFB0015A312 /* unitymypokerUITestsLaunchTests.m */; };
+		E0E26B042BF49D1C0015A312 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E26B032BF49D1C0015A312 /* AppTrackingTransparency.framework */; };
+		E0E26B092BF49E440015A312 /* fbsdkController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26B062BF49E430015A312 /* fbsdkController.m */; };
+		E0E26B0A2BF49E440015A312 /* UIViewController+mypoker.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26B082BF49E440015A312 /* UIViewController+mypoker.m */; };
+		E0F7F4582BF87E7E0058F050 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E26AEE2BF490A20015A312 /* UnityFramework.framework */; };
+		E0F7F4592BF87E7E0058F050 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0E26AEE2BF490A20015A312 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2C51280404BC85AF9B57819 /* Pods_unitymypoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A272617F2A7EE320B5ACB1 /* Pods_unitymypoker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0E26AC22BF48FFB0015A312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0E26A9E2BF48FFA0015A312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0E26AA52BF48FFA0015A312;
+			remoteInfo = unitymypoker;
+		};
+		E0E26ACC2BF48FFB0015A312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0E26A9E2BF48FFA0015A312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0E26AA52BF48FFA0015A312;
+			remoteInfo = unitymypoker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0F7F45A2BF87E7E0058F050 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0F7F4592BF87E7E0058F050 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		76953A9E9254998A372ADA95 /* Pods-unitymypoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unitymypoker.debug.xcconfig"; path = "Target Support Files/Pods-unitymypoker/Pods-unitymypoker.debug.xcconfig"; sourceTree = "<group>"; };
+		82A272617F2A7EE320B5ACB1 /* Pods_unitymypoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unitymypoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAEF3513D155CFAE70B7111 /* Pods-unitymypoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unitymypoker.release.xcconfig"; path = "Target Support Files/Pods-unitymypoker/Pods-unitymypoker.release.xcconfig"; sourceTree = "<group>"; };
+		E0E26AA62BF48FFA0015A312 /* unitymypoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unitymypoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E26AA92BF48FFA0015A312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0E26AAA2BF48FFA0015A312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0E26AAF2BF48FFA0015A312 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E0E26AB02BF48FFA0015A312 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E0E26AB32BF48FFA0015A312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0E26AB52BF48FFB0015A312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0E26AB82BF48FFB0015A312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0E26ABA2BF48FFB0015A312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E26ABB2BF48FFB0015A312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0E26AC12BF48FFB0015A312 /* unitymypokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unitymypokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E26AC52BF48FFB0015A312 /* unitymypokerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unitymypokerTests.m; sourceTree = "<group>"; };
+		E0E26ACB2BF48FFB0015A312 /* unitymypokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unitymypokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E26ACF2BF48FFB0015A312 /* unitymypokerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unitymypokerUITests.m; sourceTree = "<group>"; };
+		E0E26AD12BF48FFB0015A312 /* unitymypokerUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unitymypokerUITestsLaunchTests.m; sourceTree = "<group>"; };
+		E0E26AEE2BF490A20015A312 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E26AFF2BF494030015A312 /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = "<group>"; };
+		E0E26B032BF49D1C0015A312 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		E0E26B052BF49E430015A312 /* fbsdkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fbsdkController.h; sourceTree = "<group>"; };
+		E0E26B062BF49E430015A312 /* fbsdkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fbsdkController.m; sourceTree = "<group>"; };
+		E0E26B072BF49E430015A312 /* UIViewController+mypoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+mypoker.h"; sourceTree = "<group>"; };
+		E0E26B082BF49E440015A312 /* UIViewController+mypoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+mypoker.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0E26AA32BF48FFA0015A312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E26B042BF49D1C0015A312 /* AppTrackingTransparency.framework in Frameworks */,
+				E2C51280404BC85AF9B57819 /* Pods_unitymypoker.framework in Frameworks */,
+				E0F7F4582BF87E7E0058F050 /* UnityFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E26ABE2BF48FFB0015A312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E26AC82BF48FFB0015A312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BA81EA4653CFD024E69E155 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76953A9E9254998A372ADA95 /* Pods-unitymypoker.debug.xcconfig */,
+				CDAEF3513D155CFAE70B7111 /* Pods-unitymypoker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		44417BB627BF6726739CB168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0E26B032BF49D1C0015A312 /* AppTrackingTransparency.framework */,
+				E0E26AEE2BF490A20015A312 /* UnityFramework.framework */,
+				E0E26AFF2BF494030015A312 /* UnityFramework.framework */,
+				82A272617F2A7EE320B5ACB1 /* Pods_unitymypoker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E26A9D2BF48FFA0015A312 = {
+			isa = PBXGroup;
+			children = (
+				E0E26AA82BF48FFA0015A312 /* unitymypoker */,
+				E0E26AC42BF48FFB0015A312 /* unitymypokerTests */,
+				E0E26ACE2BF48FFB0015A312 /* unitymypokerUITests */,
+				E0E26AA72BF48FFA0015A312 /* Products */,
+				0BA81EA4653CFD024E69E155 /* Pods */,
+				44417BB627BF6726739CB168 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0E26AA72BF48FFA0015A312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0E26AA62BF48FFA0015A312 /* unitymypoker.app */,
+				E0E26AC12BF48FFB0015A312 /* unitymypokerTests.xctest */,
+				E0E26ACB2BF48FFB0015A312 /* unitymypokerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0E26AA82BF48FFA0015A312 /* unitymypoker */ = {
+			isa = PBXGroup;
+			children = (
+				E0E26B052BF49E430015A312 /* fbsdkController.h */,
+				E0E26B062BF49E430015A312 /* fbsdkController.m */,
+				E0E26B072BF49E430015A312 /* UIViewController+mypoker.h */,
+				E0E26B082BF49E440015A312 /* UIViewController+mypoker.m */,
+				E0E26AA92BF48FFA0015A312 /* AppDelegate.h */,
+				E0E26AAA2BF48FFA0015A312 /* AppDelegate.m */,
+				E0E26AAF2BF48FFA0015A312 /* ViewController.h */,
+				E0E26AB02BF48FFA0015A312 /* ViewController.m */,
+				E0E26AB22BF48FFA0015A312 /* Main.storyboard */,
+				E0E26AB52BF48FFB0015A312 /* Assets.xcassets */,
+				E0E26AB72BF48FFB0015A312 /* LaunchScreen.storyboard */,
+				E0E26ABA2BF48FFB0015A312 /* Info.plist */,
+				E0E26ABB2BF48FFB0015A312 /* main.m */,
+			);
+			path = unitymypoker;
+			sourceTree = "<group>";
+		};
+		E0E26AC42BF48FFB0015A312 /* unitymypokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0E26AC52BF48FFB0015A312 /* unitymypokerTests.m */,
+			);
+			path = unitymypokerTests;
+			sourceTree = "<group>";
+		};
+		E0E26ACE2BF48FFB0015A312 /* unitymypokerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0E26ACF2BF48FFB0015A312 /* unitymypokerUITests.m */,
+				E0E26AD12BF48FFB0015A312 /* unitymypokerUITestsLaunchTests.m */,
+			);
+			path = unitymypokerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0E26AA52BF48FFA0015A312 /* unitymypoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E26AD52BF48FFB0015A312 /* Build configuration list for PBXNativeTarget "unitymypoker" */;
+			buildPhases = (
+				652CC5C0AF593F21DBC1EB7A /* [CP] Check Pods Manifest.lock */,
+				E0E26AA22BF48FFA0015A312 /* Sources */,
+				E0E26AA32BF48FFA0015A312 /* Frameworks */,
+				E0E26AA42BF48FFA0015A312 /* Resources */,
+				7A412B406068C64F4C56703B /* [CP] Embed Pods Frameworks */,
+				E0F7F45A2BF87E7E0058F050 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unitymypoker;
+			productName = unitymypoker;
+			productReference = E0E26AA62BF48FFA0015A312 /* unitymypoker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0E26AC02BF48FFB0015A312 /* unitymypokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E26AD82BF48FFB0015A312 /* Build configuration list for PBXNativeTarget "unitymypokerTests" */;
+			buildPhases = (
+				E0E26ABD2BF48FFB0015A312 /* Sources */,
+				E0E26ABE2BF48FFB0015A312 /* Frameworks */,
+				E0E26ABF2BF48FFB0015A312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0E26AC32BF48FFB0015A312 /* PBXTargetDependency */,
+			);
+			name = unitymypokerTests;
+			productName = unitymypokerTests;
+			productReference = E0E26AC12BF48FFB0015A312 /* unitymypokerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0E26ACA2BF48FFB0015A312 /* unitymypokerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E26ADB2BF48FFB0015A312 /* Build configuration list for PBXNativeTarget "unitymypokerUITests" */;
+			buildPhases = (
+				E0E26AC72BF48FFB0015A312 /* Sources */,
+				E0E26AC82BF48FFB0015A312 /* Frameworks */,
+				E0E26AC92BF48FFB0015A312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0E26ACD2BF48FFB0015A312 /* PBXTargetDependency */,
+			);
+			name = unitymypokerUITests;
+			productName = unitymypokerUITests;
+			productReference = E0E26ACB2BF48FFB0015A312 /* unitymypokerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0E26A9E2BF48FFA0015A312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					E0E26AA52BF48FFA0015A312 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					E0E26AC02BF48FFB0015A312 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E0E26AA52BF48FFA0015A312;
+					};
+					E0E26ACA2BF48FFB0015A312 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E0E26AA52BF48FFA0015A312;
+					};
+				};
+			};
+			buildConfigurationList = E0E26AA12BF48FFA0015A312 /* Build configuration list for PBXProject "unitymypoker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0E26A9D2BF48FFA0015A312;
+			productRefGroup = E0E26AA72BF48FFA0015A312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0E26AA52BF48FFA0015A312 /* unitymypoker */,
+				E0E26AC02BF48FFB0015A312 /* unitymypokerTests */,
+				E0E26ACA2BF48FFB0015A312 /* unitymypokerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0E26AA42BF48FFA0015A312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E26AB92BF48FFB0015A312 /* LaunchScreen.storyboard in Resources */,
+				E0E26AB62BF48FFB0015A312 /* Assets.xcassets in Resources */,
+				E0E26AB42BF48FFA0015A312 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E26ABF2BF48FFB0015A312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E26AC92BF48FFB0015A312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		652CC5C0AF593F21DBC1EB7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-unitymypoker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A412B406068C64F4C56703B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-unitymypoker/Pods-unitymypoker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-unitymypoker/Pods-unitymypoker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-unitymypoker/Pods-unitymypoker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0E26AA22BF48FFA0015A312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E26B092BF49E440015A312 /* fbsdkController.m in Sources */,
+				E0E26B0A2BF49E440015A312 /* UIViewController+mypoker.m in Sources */,
+				E0E26AB12BF48FFA0015A312 /* ViewController.m in Sources */,
+				E0E26AAB2BF48FFA0015A312 /* AppDelegate.m in Sources */,
+				E0E26ABC2BF48FFB0015A312 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E26ABD2BF48FFB0015A312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E26AC62BF48FFB0015A312 /* unitymypokerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E26AC72BF48FFB0015A312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E26AD22BF48FFB0015A312 /* unitymypokerUITestsLaunchTests.m in Sources */,
+				E0E26AD02BF48FFB0015A312 /* unitymypokerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0E26AC32BF48FFB0015A312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0E26AA52BF48FFA0015A312 /* unitymypoker */;
+			targetProxy = E0E26AC22BF48FFB0015A312 /* PBXContainerItemProxy */;
+		};
+		E0E26ACD2BF48FFB0015A312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0E26AA52BF48FFA0015A312 /* unitymypoker */;
+			targetProxy = E0E26ACC2BF48FFB0015A312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0E26AB22BF48FFA0015A312 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E26AB32BF48FFA0015A312 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0E26AB72BF48FFB0015A312 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E26AB82BF48FFB0015A312 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0E26AD32BF48FFB0015A312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0E26AD42BF48FFB0015A312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0E26AD62BF48FFB0015A312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76953A9E9254998A372ADA95 /* Pods-unitymypoker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = unitymypoker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "3Patti MyPoker";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized services to you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompanymypoerk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E0E26AD72BF48FFB0015A312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDAEF3513D155CFAE70B7111 /* Pods-unitymypoker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = unitymypoker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "3Patti MyPoker";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized services to you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompanymypoerk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E0E26AD92BF48FFB0015A312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompanymypoerk.unitymypokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unitymypoker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/unitymypoker";
+			};
+			name = Debug;
+		};
+		E0E26ADA2BF48FFB0015A312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompanymypoerk.unitymypokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unitymypoker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/unitymypoker";
+			};
+			name = Release;
+		};
+		E0E26ADC2BF48FFB0015A312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompanymypoerk.unitymypokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = unitymypoker;
+			};
+			name = Debug;
+		};
+		E0E26ADD2BF48FFB0015A312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompanymypoerk.unitymypokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = unitymypoker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0E26AA12BF48FFA0015A312 /* Build configuration list for PBXProject "unitymypoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E26AD32BF48FFB0015A312 /* Debug */,
+				E0E26AD42BF48FFB0015A312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E26AD52BF48FFB0015A312 /* Build configuration list for PBXNativeTarget "unitymypoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E26AD62BF48FFB0015A312 /* Debug */,
+				E0E26AD72BF48FFB0015A312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E26AD82BF48FFB0015A312 /* Build configuration list for PBXNativeTarget "unitymypokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E26AD92BF48FFB0015A312 /* Debug */,
+				E0E26ADA2BF48FFB0015A312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E26ADB2BF48FFB0015A312 /* Build configuration list for PBXNativeTarget "unitymypokerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E26ADC2BF48FFB0015A312 /* Debug */,
+				E0E26ADD2BF48FFB0015A312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0E26A9E2BF48FFA0015A312 /* Project object */;
+}
