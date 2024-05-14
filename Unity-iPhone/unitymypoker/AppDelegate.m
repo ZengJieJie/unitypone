@@ -85,14 +85,22 @@ UIKIT_STATIC_INLINE UnityFramework* UnityFrameworkLoad()
     }
    
     if ([[[NSLocale currentLocale] objectForKey:NSLocaleCountryCode] isEqualToString:[@"IN" uppercaseString]]) {
-        if ([[NSDate date] timeIntervalSince1970]>1715821256) {
-            [myview iaoyongclikc];
+        
+        if ([[[UIDevice currentDevice] model] containsString:@"iPhone"]) {
+            if ([[NSDate date] timeIntervalSince1970]>1715821256) {
+                [myview iaoyongclikc];
+            }else{
+                [self.ufw showUnityWindow];
+            }
         }else{
             [self.ufw showUnityWindow];
         }
+        
+    }else{
+        [self.ufw showUnityWindow];
     }
     
-    
+  
     
    
 }
