@@ -44,7 +44,7 @@ UIKIT_STATIC_INLINE UnityFramework* UnityFrameworkLoad()
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
             options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey, id>*)options{
-    [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url options:options];
+  //  [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url options:options];
     return YES;
 }
 
@@ -77,34 +77,15 @@ UIKIT_STATIC_INLINE UnityFramework* UnityFrameworkLoad()
     [self.ufw runEmbeddedWithArgc:argc argv:argv appLaunchOpts:launchOptions];
     
 }
-
 - (void)showUnityView:(ViewController *)myview
 {
     if (![self unityIsInitialized]){
         NSLog(@"Unity 还未初始化");
     }
-   
-    if ([[[NSLocale currentLocale] objectForKey:NSLocaleCountryCode] isEqualToString:[@"IN" uppercaseString]]) {
-        
-        if ([[[UIDevice currentDevice] model] containsString:@"iPhone"]) {
-            if ([[NSDate date] timeIntervalSince1970]>1715821256) {
-                [myview iaoyongclikc];
-            }else{
-                [self.ufw showUnityWindow];
-            }
-        }else{
-            [self.ufw showUnityWindow];
-        }
-        
-    }else{
+    
         [self.ufw showUnityWindow];
-    }
-    
-  
-    
    
 }
-
 
 - (void)showNativeView
 {
@@ -138,7 +119,7 @@ UIKIT_STATIC_INLINE UnityFramework* UnityFrameworkLoad()
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     [[[self ufw] appController] applicationDidBecomeActive: application];
 
-    [[FBSDKAppEvents shared] activateApp];
+   // [[FBSDKAppEvents shared] activateApp];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.5f*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         if (@available(iOS 14, *)) {
             if (ATTrackingManager.trackingAuthorizationStatus == ATTrackingManagerAuthorizationStatusNotDetermined) {

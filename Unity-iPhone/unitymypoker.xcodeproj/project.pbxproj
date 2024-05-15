@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6D395922BF4ACD700E2A468 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D395912BF4ACD700E2A468 /* UnityFramework.framework */; };
+		C6D395932BF4ACD700E2A468 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6D395912BF4ACD700E2A468 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0E26AAB2BF48FFA0015A312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26AAA2BF48FFA0015A312 /* AppDelegate.m */; };
 		E0E26AB12BF48FFA0015A312 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26AB02BF48FFA0015A312 /* ViewController.m */; };
 		E0E26AB42BF48FFA0015A312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E26AB22BF48FFA0015A312 /* Main.storyboard */; };
@@ -17,10 +19,6 @@
 		E0E26AD02BF48FFB0015A312 /* unitymypokerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26ACF2BF48FFB0015A312 /* unitymypokerUITests.m */; };
 		E0E26AD22BF48FFB0015A312 /* unitymypokerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26AD12BF48FFB0015A312 /* unitymypokerUITestsLaunchTests.m */; };
 		E0E26B042BF49D1C0015A312 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E26B032BF49D1C0015A312 /* AppTrackingTransparency.framework */; };
-		E0E26B092BF49E440015A312 /* fbsdkController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26B062BF49E430015A312 /* fbsdkController.m */; };
-		E0E26B0A2BF49E440015A312 /* UIViewController+mypoker.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E26B082BF49E440015A312 /* UIViewController+mypoker.m */; };
-		E0F7F4582BF87E7E0058F050 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E26AEE2BF490A20015A312 /* UnityFramework.framework */; };
-		E0F7F4592BF87E7E0058F050 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0E26AEE2BF490A20015A312 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2C51280404BC85AF9B57819 /* Pods_unitymypoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A272617F2A7EE320B5ACB1 /* Pods_unitymypoker.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,13 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E0F7F45A2BF87E7E0058F050 /* Embed Frameworks */ = {
+		C6D395942BF4ACD700E2A468 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E0F7F4592BF87E7E0058F050 /* UnityFramework.framework in Embed Frameworks */,
+				C6D395932BF4ACD700E2A468 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +56,7 @@
 /* Begin PBXFileReference section */
 		76953A9E9254998A372ADA95 /* Pods-unitymypoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unitymypoker.debug.xcconfig"; path = "Target Support Files/Pods-unitymypoker/Pods-unitymypoker.debug.xcconfig"; sourceTree = "<group>"; };
 		82A272617F2A7EE320B5ACB1 /* Pods_unitymypoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unitymypoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D395912BF4ACD700E2A468 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAEF3513D155CFAE70B7111 /* Pods-unitymypoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unitymypoker.release.xcconfig"; path = "Target Support Files/Pods-unitymypoker/Pods-unitymypoker.release.xcconfig"; sourceTree = "<group>"; };
 		E0E26AA62BF48FFA0015A312 /* unitymypoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unitymypoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E26AA92BF48FFA0015A312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,10 +76,6 @@
 		E0E26AEE2BF490A20015A312 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E26AFF2BF494030015A312 /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = "<group>"; };
 		E0E26B032BF49D1C0015A312 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
-		E0E26B052BF49E430015A312 /* fbsdkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fbsdkController.h; sourceTree = "<group>"; };
-		E0E26B062BF49E430015A312 /* fbsdkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fbsdkController.m; sourceTree = "<group>"; };
-		E0E26B072BF49E430015A312 /* UIViewController+mypoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+mypoker.h"; sourceTree = "<group>"; };
-		E0E26B082BF49E440015A312 /* UIViewController+mypoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+mypoker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +85,7 @@
 			files = (
 				E0E26B042BF49D1C0015A312 /* AppTrackingTransparency.framework in Frameworks */,
 				E2C51280404BC85AF9B57819 /* Pods_unitymypoker.framework in Frameworks */,
-				E0F7F4582BF87E7E0058F050 /* UnityFramework.framework in Frameworks */,
+				C6D395922BF4ACD700E2A468 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +118,7 @@
 		44417BB627BF6726739CB168 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6D395912BF4ACD700E2A468 /* UnityFramework.framework */,
 				E0E26B032BF49D1C0015A312 /* AppTrackingTransparency.framework */,
 				E0E26AEE2BF490A20015A312 /* UnityFramework.framework */,
 				E0E26AFF2BF494030015A312 /* UnityFramework.framework */,
@@ -156,10 +152,6 @@
 		E0E26AA82BF48FFA0015A312 /* unitymypoker */ = {
 			isa = PBXGroup;
 			children = (
-				E0E26B052BF49E430015A312 /* fbsdkController.h */,
-				E0E26B062BF49E430015A312 /* fbsdkController.m */,
-				E0E26B072BF49E430015A312 /* UIViewController+mypoker.h */,
-				E0E26B082BF49E440015A312 /* UIViewController+mypoker.m */,
 				E0E26AA92BF48FFA0015A312 /* AppDelegate.h */,
 				E0E26AAA2BF48FFA0015A312 /* AppDelegate.m */,
 				E0E26AAF2BF48FFA0015A312 /* ViewController.h */,
@@ -202,7 +194,7 @@
 				E0E26AA32BF48FFA0015A312 /* Frameworks */,
 				E0E26AA42BF48FFA0015A312 /* Resources */,
 				7A412B406068C64F4C56703B /* [CP] Embed Pods Frameworks */,
-				E0F7F45A2BF87E7E0058F050 /* Embed Frameworks */,
+				C6D395942BF4ACD700E2A468 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,8 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E26B092BF49E440015A312 /* fbsdkController.m in Sources */,
-				E0E26B0A2BF49E440015A312 /* UIViewController+mypoker.m in Sources */,
 				E0E26AB12BF48FFA0015A312 /* ViewController.m in Sources */,
 				E0E26AAB2BF48FFA0015A312 /* AppDelegate.m in Sources */,
 				E0E26ABC2BF48FFB0015A312 /* main.m in Sources */,
@@ -548,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -557,7 +547,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = unitymypoker/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "3Patti MyPoker";
+				INFOPLIST_KEY_CFBundleDisplayName = "MY Poker";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized services to you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -587,7 +577,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -596,7 +586,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = unitymypoker/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "3Patti MyPoker";
+				INFOPLIST_KEY_CFBundleDisplayName = "MY Poker";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized services to you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
