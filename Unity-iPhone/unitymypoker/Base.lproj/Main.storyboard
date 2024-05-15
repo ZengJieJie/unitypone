@@ -37,7 +37,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="2688" height="1242"/>
+        <image name="1" width="1344" height="621"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

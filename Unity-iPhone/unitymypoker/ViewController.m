@@ -7,7 +7,6 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
-#import "UIViewController+mypoker.h"
 @interface ViewController ()
 
 @end
@@ -16,16 +15,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
--(void)viewDidAppear:(BOOL)animated{
     AppDelegate *appDelegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
     [appDelegate showUnityView:self];
 }
--(void)iaoyongclikc{
-    [self logDevice];
+
+-(void)viewDidAppear:(BOOL)animated{
+   
 }
+
 
 
 @end
