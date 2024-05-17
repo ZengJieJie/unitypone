@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6D395A82BF75E0700E2A468 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E058498D2BF757B9006F9681 /* libcocos2d iOS.a */; };
 		E058497C2BF75783006F9681 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = E058497B2BF75783006F9681 /* assets */; };
 		E05849832BF757A4006F9681 /* jsb_module_register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E05849802BF757A4006F9681 /* jsb_module_register.cpp */; };
 		E05849842BF757A4006F9681 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E05849822BF757A4006F9681 /* AppDelegate.cpp */; };
@@ -185,6 +186,7 @@
 				E0F7F4AF2BFB441E0058F050 /* GameController.framework in Frameworks */,
 				E0F7F4C12BFB44610058F050 /* WebKit.framework in Frameworks */,
 				E0F7F4972BFB430F0058F050 /* AppTrackingTransparency.framework in Frameworks */,
+				C6D395A82BF75E0700E2A468 /* libcocos2d iOS.a in Frameworks */,
 				E0F7F4A12BFB43530058F050 /* CoreFoundation.framework in Frameworks */,
 				E0F7F49F2BFB434A0058F050 /* CFNetwork.framework in Frameworks */,
 				E0F7F4B52BFB44330058F050 /* OpenAL.framework in Frameworks */,
