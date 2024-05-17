@@ -1,0 +1,870 @@
+{
+
+"Instructions Readme": "1) Open Chrome or Edge, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+"processInfo": {
+    "os": "Unix 14.4.0",
+    "cpuCount": "8",
+    "mappedPhysicalMemory": "47mb",
+    "commandLine": "/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/build/deploy_arm64/il2cpp.dll --compile-cpp --platform=iOS --baselib-directory=/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Libraries --additional-defines=IL2CPP_DEBUG=0 --incremental-g-c-time-slice=3 --dotnetprofile=unityaot-macos --profiler-report --print-command-line --external-lib-il2-cpp=/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Libraries/libil2cpp.a --generatedcppdir=Il2CppOutputProject/Source/il2cppOutput --architecture=arm64 --outputpath=/Users/fengting/Library/Developer/Xcode/DerivedData/unitymypoker-eokhzarlzphltcgowynrlxzrbvhs/Build/Products/Debug-iphoneos/libGameAssembly.a --cachedirectory=/Users/fengting/Library/Developer/Xcode/DerivedData/unitymypoker-eokhzarlzphltcgowynrlxzrbvhs/Build/Intermediates.noindex/Unity-iPhone.build/Debug-iphoneos/artifacts/arm64 --configuration=Debug"
+},
+
+"traceEvents":[
+{ "pid": 77516, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "il2cpp_outer" } },
+{ "pid": 77516, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 77516, "tid": 12884901888, "ph": "M", "name": "thread_name", "args": { "name": "GC - Gen2" } },
+{ "pid": 77516, "tid": 1, "ts": 1715937369195285, "dur": 1069, "ph": "X", "name": "GC - Gen2", "args": {} },
+{ "pid": 77516, "tid": 8589934592, "ph": "M", "name": "thread_name", "args": { "name": "GC - Gen1" } },
+{ "pid": 77516, "tid": 4294967296, "ph": "M", "name": "thread_name", "args": { "name": "GC - Gen0" } },
+{ "pid": 77516, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "Main thread" } },
+{ "pid": 77516, "tid": 1, "ts": 1715937368959908, "dur": 217226, "ph": "X", "name": "il2cpp.exe", "args": {"analytics": "1"} },
+{ "pid": 77516, "tid": 1, "ts": 1715937368960983, "dur": 34526, "ph": "X", "name": "ParseArguments", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937368995510, "dur": 4563, "ph": "X", "name": "RegisterRuntimeEventListeners", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369009897, "dur": 157613, "ph": "X", "name": "BeeDriverRunner.ExecuteIl2Cpp", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369169916, "dur": 6035, "ph": "X", "name": "Write Analytics", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369177134, "dur": 12078, "ph": "X", "name": "UnregisterRuntimeEventListeners", "args": {} },
+{ "pid": 77516, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 77516, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 77516, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "Main thread" } },
+{ "pid": 77516, "tid": 1, "ts": 1715937369067420, "dur": 96274, "ph": "X", "name": "Build FinalProgram", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369068622, "dur": 5980, "ph": "X", "name": "Writing build program input data", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369074615, "dur": 89030, "ph": "X", "name": "Running build system backend", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369163662, "dur": 32, "ph": "X", "name": "Finishing", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369168728, "dur": 1039, "ph": "X", "name": "Main thread", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1715937369107835, "dur":2501, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715937369110375, "dur":3730, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715937369114119, "dur":62, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715937369114185, "dur":439, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715937369114625, "dur":38925, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715937369153628, "dur":3482, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1715937369114293, "dur":335, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369114629, "dur":20266, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369135105, "dur":3670, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369138965, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/icalls/mscorlib/System.Runtime.InteropServices/Marshal.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369138799, "dur":431, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369135103, "dur":4127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ckpgajhn4z63.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369139250, "dur":214, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__8.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369139469, "dur":329, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369139240, "dur":558, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/wu8fb6o5hygz.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369139835, "dur":105, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__14.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369139944, "dur":376, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369139823, "dur":497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/174ae6k9xa29.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369140343, "dur":127, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369140482, "dur":269, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369140331, "dur":420, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/2ymkqih4gz0b.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369140775, "dur":266, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreTextEngineModule__1.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369141224, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/MemoryUtils.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369141045, "dur":322, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369140765, "dur":602, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hspbivmc7j2l.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369141397, "dur":122, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.Physics2DModule.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369141569, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/StringViewUtils.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369141523, "dur":423, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369141386, "dur":560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/kmdb45w4e9ee.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369141966, "dur":106, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.CoreModule__1.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369142093, "dur":185, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369141956, "dur":323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/dkzwkbbd9eyk.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369142333, "dur":89, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.VisualScripting.Core__1.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369142531, "dur":260, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369142321, "dur":471, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/42vdmfv7a82p.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369142816, "dur":116, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.TextMeshPro__2.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369142941, "dur":430, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369142806, "dur":565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/8zdand58xrkq.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369143405, "dur":202, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.Burst.Unsafe.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369143807, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Atomic.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369143677, "dur":687, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369143394, "dur":971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/d8khfmqv0tiy.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369144385, "dur":440, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__9.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369144910, "dur":551, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369144375, "dur":1086, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/6qfa7vk7aqgq.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369145481, "dur":208, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__17.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369146048, "dur":65, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Array.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369145693, "dur":513, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369145471, "dur":735, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/jy288gvka563.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369146241, "dur":171, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__10.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369146533, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Class.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369146617, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Lock.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369146706, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/icalls/mscorlib/System.Runtime.Remoting.Proxies/RealProxy.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369146847, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-windowsruntime-types.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369146416, "dur":943, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369146226, "dur":1134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/4j06s4wzmaho.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369147391, "dur":103, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppCCalculateFieldValues.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369147506, "dur":291, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369147380, "dur":417, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/fpi1q40r76z3.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369147819, "dur":113, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__5.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369147945, "dur":288, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369147809, "dur":424, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vuv0aa6oti3s.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148263, "dur":108, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__45.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148409, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/ScopedThreadAttacher.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148483, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/BasicTypes.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148552, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/codegen/il2cpp-codegen-tiny.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148622, "dur":86, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/sparsetable.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148775, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Object.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148845, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Compiler/Baselib_Atomic_Gcc_Patch_PostInclude.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148915, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Assembly.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369149140, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/GenericClass.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148376, "dur":1222, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369148245, "dur":1353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hfq9o8d00c9d.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369149635, "dur":181, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__30.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369150077, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_WakeupFallbackStrategy.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369149845, "dur":326, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369149621, "dur":550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hmbt0xkuh3c2.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369150171, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369150239, "dur":157, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__24.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369150767, "dur":87, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/metadata/Il2CppTypeHash.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369150399, "dur":614, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369150227, "dur":786, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/225qnii4r0t8.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369151065, "dur":359, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__17.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369151610, "dur":65, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-config-api.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369151689, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/ClassInlines.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369151430, "dur":565, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369151037, "dur":959, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/23w0ut1gz9yv.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369152055, "dur":213, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369152308, "dur":85, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Type.h" }}
+,{ "pid":12345, "tid":1, "ts":1715937369152278, "dur":621, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369152026, "dur":873, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/880ylssk5kld.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369152928, "dur":345, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__10.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1715937369153278, "dur":166, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715937369152915, "dur":529, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/6cj8z7pwixzu.o" }}
+,{ "pid":12345, "tid":1, "ts":1715937369153448, "dur":94, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369114302, "dur":335, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369114637, "dur":20263, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369134903, "dur":162, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/__Generated_CodeGen.c" }}
+,{ "pid":12345, "tid":2, "ts":1715937369135065, "dur":1045, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/__Generated_CodeGen.c" }}
+,{ "pid":12345, "tid":2, "ts":1715937369136142, "dur":331, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369134901, "dur":1572, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/56bko05ojx59.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369136524, "dur":216, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.SpriteShapeModule_CodeGen.c" }}
+,{ "pid":12345, "tid":2, "ts":1715937369136792, "dur":317, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369136499, "dur":611, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/nf5kvm5qiqej.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369137110, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369137204, "dur":263, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.GridModule_CodeGen.c" }}
+,{ "pid":12345, "tid":2, "ts":1715937369137511, "dur":211, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369137174, "dur":549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/lirz7xeblnka.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369137777, "dur":125, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.InternalAPIEngineBridge.001_CodeGen.c" }}
+,{ "pid":12345, "tid":2, "ts":1715937369137913, "dur":140, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369137752, "dur":301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/kkuphatq2208.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369138238, "dur":222, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369138074, "dur":386, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/3hpbbh19kdas.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369138506, "dur":105, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppGenericMethodDefinitions.c" }}
+,{ "pid":12345, "tid":2, "ts":1715937369138886, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/c-api/il2cpp-config-api-platforms.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369138667, "dur":270, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369138493, "dur":444, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ot3pych66oke.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369138970, "dur":113, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIModule.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369139330, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm-utils/VmStringUtils.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369139531, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/type_traits.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369139094, "dur":495, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369138959, "dur":630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/3cfkhmma4k04.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369139634, "dur":139, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__2.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369139786, "dur":201, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369139613, "dur":374, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ioquf96iy57y.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369140032, "dur":120, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__11.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369140160, "dur":367, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369140021, "dur":506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/u4diy7bgowxr.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369140561, "dur":134, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextRenderingModule.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369140843, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/codegen/il2cpp-codegen.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369140724, "dur":369, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369140550, "dur":544, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/m3toufrr3rkw.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369141123, "dur":119, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.PropertiesModule.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369141482, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/sparsehashtable.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369141570, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_SourceLocation.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369141831, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Baselib_CappedSemaphore_FutexBased.inl.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369141246, "dur":663, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369141113, "dur":796, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/abfikvgvo7jo.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369141944, "dur":330, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.CoreModule__2.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369142326, "dur":96, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/metadata/Il2CppSignature.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369142533, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/sparseconfig.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369142616, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/ExceptionSupportStack.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369142325, "dur":728, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369141934, "dur":1119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/esjd5qrbdhf0.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369143085, "dur":106, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.Mathematics.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369143195, "dur":380, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369143072, "dur":504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/bo65tcqbucw3.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369143612, "dur":522, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System__2.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369144462, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/Event.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369144237, "dur":744, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369143602, "dur":1380, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/5a479nakuaxz.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369145007, "dur":277, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__4.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369145293, "dur":290, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369144999, "dur":584, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/tsh5vejjvzo5.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369145606, "dur":199, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__16.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369146036, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/icalls/mscorlib/System.Globalization/CalendarData.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369146365, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-metadata.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369145814, "dur":772, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369145596, "dur":990, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/iqiso1em62po.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369146620, "dur":205, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppReversePInvokeWrapperTable.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369146829, "dur":213, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369146610, "dur":433, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hxlgceqsxz3s.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369147075, "dur":140, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppCCTypeValuesTable.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369147228, "dur":226, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369147063, "dur":391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ox82nd0iiphh.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369147484, "dur":160, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__9.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369147813, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/metadata/Il2CppTypeCompare.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369147935, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/template_util.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369147653, "dur":519, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369147474, "dur":698, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/3569aovg7yoq.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148204, "dur":136, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__46.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148343, "dur":192, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148191, "dur":344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/2utx4hsx30kx.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148559, "dur":94, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__41.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148658, "dur":171, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148545, "dur":285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/93e0ouo8mwng.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148852, "dur":92, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__38.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148948, "dur":574, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369148839, "dur":683, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hghjwjxc8le1.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369149561, "dur":394, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__31.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369150079, "dur":64, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++" }}
+,{ "pid":12345, "tid":2, "ts":1715937369150183, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/codegen/il2cpp-codegen-tiny.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369150235, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/ExceptionSupportStack.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369150147, "dur":589, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369149545, "dur":1191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/21ehg7yrkrol.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369150792, "dur":132, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__2.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369150934, "dur":330, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369150762, "dur":502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/or47ubxvj4ya.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369151293, "dur":92, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__15.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369151607, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-windowsruntime-types.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369151701, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Il2CppHStringReference.h" }}
+,{ "pid":12345, "tid":2, "ts":1715937369151390, "dur":878, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369151280, "dur":988, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/gg9vu46ksj6w.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369152315, "dur":131, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__8.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369152466, "dur":433, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369152289, "dur":610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vru4xwx31ywn.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369152952, "dur":123, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__1.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1715937369153085, "dur":301, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715937369152938, "dur":449, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/w58umq1jfic4.o" }}
+,{ "pid":12345, "tid":2, "ts":1715937369153389, "dur":149, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369114294, "dur":337, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369114670, "dur":20254, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369134926, "dur":467, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIModule_CodeGen.c" }}
+,{ "pid":12345, "tid":3, "ts":1715937369135393, "dur":716, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIModule_CodeGen.c" }}
+,{ "pid":12345, "tid":3, "ts":1715937369136128, "dur":149, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369134924, "dur":1353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/n9kb8wl1ocin.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369136337, "dur":277, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextRenderingModule_CodeGen.c" }}
+,{ "pid":12345, "tid":3, "ts":1715937369136666, "dur":197, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369136306, "dur":557, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/e249wk7e9j0p.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369136926, "dur":399, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.InputLegacyModule_CodeGen.c" }}
+,{ "pid":12345, "tid":3, "ts":1715937369137504, "dur":204, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369136902, "dur":807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/mpjam6o7g1r5.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369137741, "dur":84, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.TextMeshPro_CodeGen.c" }}
+,{ "pid":12345, "tid":3, "ts":1715937369137829, "dur":153, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369137729, "dur":254, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/kaqmsf8a9w29.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369138059, "dur":188, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System.Core_CodeGen.c" }}
+,{ "pid":12345, "tid":3, "ts":1715937369138338, "dur":136, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369138026, "dur":449, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/wo9s68kpgmxh.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369138587, "dur":204, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369138486, "dur":306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ft7rqfutr355.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369138865, "dur":143, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UI__2.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139332, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/Compiler/CompilerEnvironmentMsvc.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139430, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_ErrorCode.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139012, "dur":520, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369138840, "dur":692, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/lglwry54qidm.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139532, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139627, "dur":144, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__3.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139830, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/MarshalAlloc.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139912, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Baselib.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369140089, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/StringViewUtils.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139784, "dur":907, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369139605, "dur":1086, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/33tivilg1tji.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369140692, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369140782, "dur":112, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreTextEngineModule__2.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369141118, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Alignment.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369140898, "dur":298, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369140757, "dur":440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/27szx40997d5.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369141229, "dur":84, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.PhysicsModule.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369141322, "dur":220, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369141218, "dur":324, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/29jf1zq8z1qr.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369141575, "dur":108, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.IMGUIModule.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369141841, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Atomic.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369141750, "dur":423, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369141564, "dur":610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ujrcbbgmpmvv.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369142203, "dur":109, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.AnimationModule.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369142324, "dur":261, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369142191, "dur":394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/b3er9b35x0l4.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369142620, "dur":103, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.TextMeshPro__5.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369142736, "dur":251, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369142609, "dur":379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/f3422be275o8.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369143009, "dur":115, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.TextMeshPro.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369143128, "dur":577, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369142998, "dur":708, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/walvcf7dlygc.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369143753, "dur":111, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System__1.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369143868, "dur":263, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369143728, "dur":403, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/kv0juewmrmlg.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369144158, "dur":125, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System.Core__1.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369144291, "dur":359, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369144138, "dur":512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/7uzezp29o65c.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369144674, "dur":228, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__6.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369145671, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-tokentype.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369145003, "dur":813, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369144664, "dur":1153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/znohrxbe1bc8.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369145860, "dur":225, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__14.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369146089, "dur":381, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369145836, "dur":634, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/w2unockqzcxp.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369146499, "dur":125, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Mono.Security.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369146628, "dur":203, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369146487, "dur":344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/15o3uszcyig9.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369146856, "dur":80, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppInteropDataTable.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369147388, "dur":83, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Debug.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369146943, "dur":575, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369146841, "dur":677, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/bcv7ijvpsdbs.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369147545, "dur":151, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__7.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369147815, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/MarshalAlloc.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369147936, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Class.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369148311, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Exception.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369148472, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/Mutex.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369148550, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/hashtable-common.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369148620, "dur":87, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/Thread.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369148774, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Baselib_ReentrantLock.inl.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369148844, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/densehashtable.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369148913, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/MemoryUtils.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369147703, "dur":1335, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369147527, "dur":1511, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hij5az0k08vr.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369149089, "dur":240, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__35.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369149435, "dur":102, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/WaitStatus.h" }}
+,{ "pid":12345, "tid":3, "ts":1715937369149340, "dur":712, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369149059, "dur":993, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/adqqglojy79i.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369150088, "dur":91, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__25.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369150232, "dur":125, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++" }}
+,{ "pid":12345, "tid":3, "ts":1715937369150448, "dur":217, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369150073, "dur":592, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ni9e3rw1uo5r.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369150714, "dur":511, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__21.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369151230, "dur":204, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369150681, "dur":753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vzey7j9aimpq.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369151471, "dur":159, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__14.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369151634, "dur":439, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369151449, "dur":625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/v057evsnpvud.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369152115, "dur":203, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__9.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369152322, "dur":279, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369152100, "dur":501, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/wzelice250d3.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369152636, "dur":319, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__4.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1715937369152960, "dur":319, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715937369152624, "dur":655, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/38zn2oadpwgm.o" }}
+,{ "pid":12345, "tid":3, "ts":1715937369153296, "dur":240, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369114315, "dur":327, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369114642, "dur":20271, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369134969, "dur":1155, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UnityAnalyticsModule_CodeGen.c" }}
+,{ "pid":12345, "tid":4, "ts":1715937369136128, "dur":93, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369134916, "dur":1305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/w2witthhyr2z.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369136310, "dur":259, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TilemapModule_CodeGen.c" }}
+,{ "pid":12345, "tid":4, "ts":1715937369136688, "dur":209, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369136269, "dur":628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ht29kd2gwc0u.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369136964, "dur":68, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.IMGUIModule_CodeGen.c" }}
+,{ "pid":12345, "tid":4, "ts":1715937369137081, "dur":337, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369136938, "dur":480, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/uwa8d475ck32.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369137418, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369137503, "dur":187, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.VisualScripting.Core_CodeGen.c" }}
+,{ "pid":12345, "tid":4, "ts":1715937369137719, "dur":109, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369137475, "dur":353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/3fk927cujij0.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369137934, "dur":59, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369137855, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/9pbdpabaon16.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138152, "dur":90, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138017, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/oxwxfdq5l603.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138263, "dur":61, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppTypeDefinitions.c" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138393, "dur":187, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138254, "dur":326, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ctwk83lfyeyh.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138627, "dur":163, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppGenericClassTable.c" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138616, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/fye07pnoz563.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138861, "dur":462, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UnityAnalyticsModule.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369139336, "dur":175, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369138824, "dur":688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/k0xhzdqchasd.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369139537, "dur":121, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__5.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369139832, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Thread.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369139912, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/Assert.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369140079, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/KeyWrapper.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369139662, "dur":610, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369139527, "dur":746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/prhnv7fc8jch.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369140308, "dur":125, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__1.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369140451, "dur":368, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369140296, "dur":523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/x8m6zzslvhwf.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369140847, "dur":106, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreTextEngineModule.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369140990, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/codegen/il2cpp-codegen-tiny.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369141225, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_SourceLocation.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369141482, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/ThreadLocalValue.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369141571, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Baselib_CappedSemaphore_FutexBased.inl.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369140956, "dur":697, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369140837, "dur":816, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/mypno52j1zuo.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369141701, "dur":196, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.GridModule.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369141906, "dur":586, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369141680, "dur":812, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/9bvciqzitkry.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369142524, "dur":124, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.TextMeshPro__6.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369142813, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/codegen/il2cpp-codegen.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369143075, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Baselib_Lock_SemaphoreBased.inl.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369142652, "dur":492, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369142504, "dur":640, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/0i8qilszau0r.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369143175, "dur":129, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.InternalAPIEngineBridge.001.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369143314, "dur":393, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369143165, "dur":542, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/knvn4ga1zkx4.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369143747, "dur":542, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System.Xml.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369144463, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Baselib.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369144311, "dur":612, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369143735, "dur":1188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/wixl2opuo3ad.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369144942, "dur":353, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__5.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369145303, "dur":331, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369144933, "dur":701, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/e8ktboxgyn0o.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369145664, "dur":156, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__15.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369146044, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/hashtable-common.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369146366, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppError.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369145844, "dur":667, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369145652, "dur":859, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/xaf48r0o3ee5.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369146537, "dur":106, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppUnresolvedIndirectCallStubs.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369146848, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/Thread.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369146647, "dur":377, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369146526, "dur":499, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/6aysovvlna7w.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369147043, "dur":171, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppCodeRegistration.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369147534, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Runtime.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369147225, "dur":485, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369147036, "dur":675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/2tdxkxcl3mdk.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369147748, "dur":110, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__6.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369147935, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/HashUtils.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369148117, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/ClassInlines.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369148309, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/Assert.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369148473, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/codegen/il2cpp-codegen-common.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369148551, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-class-internals.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369148621, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/gc/WriteBarrier.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369148773, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-string-types.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369148844, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/sparsehashtable.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369148913, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_SourceLocation.h" }}
+,{ "pid":12345, "tid":4, "ts":1715937369147862, "dur":1244, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369147737, "dur":1369, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/w2fhvpmnxkk8.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369149149, "dur":221, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__34.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369149379, "dur":403, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369149135, "dur":647, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/9459v57ku5s3.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369149841, "dur":210, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__28.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369150082, "dur":114, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++" }}
+,{ "pid":12345, "tid":4, "ts":1715937369150232, "dur":101, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.2.sdk/dummy" }}
+,{ "pid":12345, "tid":4, "ts":1715937369150333, "dur":596, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369149813, "dur":1116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/aeh0nw7v5gf6.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369150977, "dur":529, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__18.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369151530, "dur":50, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++" }}
+,{ "pid":12345, "tid":4, "ts":1715937369151615, "dur":310, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369150954, "dur":971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/nj0oa3fe2xaf.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369151979, "dur":226, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__1.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369152215, "dur":497, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369151950, "dur":762, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/3b1jf2iyggnr.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369152743, "dur":177, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__2.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1715937369153020, "dur":349, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715937369152722, "dur":647, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hlcj2zfhi6nn.o" }}
+,{ "pid":12345, "tid":4, "ts":1715937369153382, "dur":171, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369114302, "dur":338, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369114640, "dur":20283, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369134924, "dur":449, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UI_CodeGen.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369135373, "dur":729, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UI_CodeGen.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369136277, "dur":225, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369134923, "dur":1579, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vgho3odbu81o.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369136567, "dur":295, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.PropertiesModule_CodeGen.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369137021, "dur":187, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369136543, "dur":666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/yi6kkfje7kw7.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369137230, "dur":68, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.CoreModule_CodeGen.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369137298, "dur":132, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.CoreModule_CodeGen.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369137508, "dur":190, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369137229, "dur":469, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/2wxf7ilqvypx.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369137772, "dur":107, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.Mathematics_CodeGen.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369137964, "dur":133, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369137747, "dur":350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/366r4n6goi6j.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138151, "dur":64, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Mono.Security_CodeGen.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138234, "dur":116, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138108, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/xvlvqqcaimg7.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138402, "dur":54, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppGenericMethodTable.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138494, "dur":125, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138380, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/e37ihu2gbmzu.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138664, "dur":134, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp_CodeGen.c" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138638, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/42fe3lzkotpz.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138869, "dur":160, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UI__3.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369139040, "dur":268, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369138829, "dur":479, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/mo5ccem3uku1.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369139335, "dur":257, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__7.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369139911, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/hashtable-common.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369139681, "dur":379, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369139324, "dur":736, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/bf5rvwa8ea5f.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369140095, "dur":118, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__10.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369140220, "dur":359, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369140072, "dur":507, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/twt1dsvhkugc.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369140600, "dur":145, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreTextEngineModule__3.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369140842, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/StringViewUtils.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369140983, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/Posix/ThreadLocalValueImpl.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369141225, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/metadata/Il2CppGenericContextCompare.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369140750, "dur":692, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369140589, "dur":853, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/3fdgikh8davk.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369141487, "dur":104, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.IMGUIModule__1.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369141595, "dur":420, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369141477, "dur":538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/l4p2d99epbo4.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369142045, "dur":116, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.CoreModule.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369142512, "dur":91, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/FastReaderReaderWriterLock.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369142614, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/Compiler/CompilerEnvironmentMsvc.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369142165, "dur":558, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369142034, "dur":689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/e9h5xco33noh.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369142754, "dur":115, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.TextMeshPro__3.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369142875, "dur":317, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369142734, "dur":458, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/tfhy2mj60fw9.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369143212, "dur":142, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.Collections.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369143359, "dur":419, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369143202, "dur":576, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/q4pbcwgk1qt6.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369143812, "dur":92, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369143922, "dur":259, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369143790, "dur":391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/f8m75op6mb6i.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369144201, "dur":145, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System.Core.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369144462, "dur":54, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Compiler/Baselib_Atomic_Gcc.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369144402, "dur":755, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369144190, "dur":968, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/41j1fuuiufvg.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369145177, "dur":163, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__3.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369145539, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/template_util.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369145348, "dur":563, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369145167, "dur":744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/skxobz2krx7p.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369145941, "dur":145, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__12.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369146090, "dur":334, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369145931, "dur":493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/q7nbttrvt09m.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369146456, "dur":447, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369146907, "dur":387, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369146434, "dur":860, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/lsncmumrb228.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369147314, "dur":116, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppCCalculateFieldValues1.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369147814, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_SourceLocation.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369147937, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/metadata/Il2CppTypeHash.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369147434, "dur":661, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369147304, "dur":791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/g3e7vhnvubj6.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369148122, "dur":1131, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__47.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369149269, "dur":409, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369148104, "dur":1574, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/32depx8v721c.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369149727, "dur":606, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__3.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369150438, "dur":237, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/Compiler/CompilerEnvironmentClang.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369150767, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/codegen/il2cpp-codegen-tiny.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369150883, "dur":70, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/sparsetable.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369151156, "dur":115, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/WaitStatus.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369151284, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/HashUtils.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369150344, "dur":1239, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369149701, "dur":1882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/pzoofrdun6fq.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369151615, "dur":133, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__12.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369151957, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Thread.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369152295, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/c-api/il2cpp-config-platforms.h" }}
+,{ "pid":12345, "tid":5, "ts":1715937369151753, "dur":618, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369151598, "dur":773, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/9ci3e6xri51e.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369152412, "dur":367, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__7.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369152803, "dur":308, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369152399, "dur":712, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/acrginj6yal4.o" }}
+,{ "pid":12345, "tid":5, "ts":1715937369153148, "dur":188, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1715937369153340, "dur":142, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715937369153130, "dur":352, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/r8iodqpu46dg.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369114325, "dur":319, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369114644, "dur":20265, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369134911, "dur":191, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine_CodeGen.c" }}
+,{ "pid":12345, "tid":6, "ts":1715937369135102, "dur":1018, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine_CodeGen.c" }}
+,{ "pid":12345, "tid":6, "ts":1715937369136127, "dur":191, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369134909, "dur":1410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/pg4lgfpyv70v.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369136401, "dur":138, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreTextEngineModule_CodeGen.c" }}
+,{ "pid":12345, "tid":6, "ts":1715937369136591, "dur":183, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369136365, "dur":409, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/m3uswmwb00q5.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369136774, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369136851, "dur":128, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.PhysicsModule_CodeGen.c" }}
+,{ "pid":12345, "tid":6, "ts":1715937369137029, "dur":231, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369136826, "dur":434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/usqmszgpi18j.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369137260, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369137358, "dur":292, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.AnimationModule_CodeGen.c" }}
+,{ "pid":12345, "tid":6, "ts":1715937369137692, "dur":139, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369137318, "dur":514, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vvhdfk6u970q.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369137885, "dur":96, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.2D.Animation.Runtime_CodeGen.c" }}
+,{ "pid":12345, "tid":6, "ts":1715937369138075, "dur":180, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369137863, "dur":393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/7h3lwtgem0pk.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369138424, "dur":130, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369138269, "dur":285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/cdecycd2yoz6.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369138577, "dur":98, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppGenericInstDefinitions.c" }}
+,{ "pid":12345, "tid":6, "ts":1715937369138568, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/j90rlvgwwqcy.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369138771, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/jqiws2wxr08f.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369138891, "dur":303, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UI__1.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369139217, "dur":205, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369138881, "dur":541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/00h8bpr7nu12.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369139436, "dur":114, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__6.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369139554, "dur":330, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369139425, "dur":459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/qz13fnwacmtw.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369139917, "dur":120, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__13.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369140041, "dur":333, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369139907, "dur":467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/0zkutq4au8ku.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369140407, "dur":229, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UI.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369140701, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Compiler/Baselib_Atomic_MsvcIntrinsics.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369140653, "dur":307, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369140396, "dur":564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/rss2sm9pp8ha.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369140987, "dur":233, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.SpriteShapeModule.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369141232, "dur":198, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369140969, "dur":461, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/7tivj22vrxp3.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369141456, "dur":129, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.InputLegacyModule.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369141829, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-string-types.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369141589, "dur":479, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369141440, "dur":628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/qramassawe70.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142092, "dur":119, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.AudioModule.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142324, "dur":114, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_CountdownTimer.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142615, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/libc_allocator_with_realloc.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142750, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/NonCopyable.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142811, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppHashMap.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142215, "dur":729, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142081, "dur":864, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/djizxkux8k00.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142977, "dur":214, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.TextMeshPro__1.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369143195, "dur":381, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369142966, "dur":610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/7rtt2xoaup3a.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369143621, "dur":390, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System__3.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369144027, "dur":482, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369143593, "dur":917, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/6ioou3qiycef.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369144542, "dur":656, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__7.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369145529, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/Thread.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369145208, "dur":609, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369144530, "dur":1287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/0v8xbdsc5dtn.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369145852, "dur":939, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__13.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369146856, "dur":235, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369145842, "dur":1249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/bnrz825swol6.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369147111, "dur":169, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppCCFieldValuesTable.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369147386, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Baselib_CappedSemaphore_SemaphoreBased.inl.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369147283, "dur":474, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369147101, "dur":656, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/e2zvsjib0mit.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369147778, "dur":93, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__50.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369147875, "dur":408, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369147768, "dur":515, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vqbvh8zrmdbs.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369148315, "dur":116, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__44.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369148435, "dur":171, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369148304, "dur":302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/wzml9yz2xoxu.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369148629, "dur":104, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__40.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369148736, "dur":161, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369148615, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/oobc9kabk8bx.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369148922, "dur":98, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__37.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369149024, "dur":372, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369148908, "dur":488, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/g8w2b4ge4jxl.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369149444, "dur":198, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__32.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369149646, "dur":310, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369149418, "dur":538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/39yx0mfqot50.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369150000, "dur":124, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__26.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369150178, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-windowsruntime-types.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369150128, "dur":279, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369149976, "dur":432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/oqtvn7c0yqm7.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369150446, "dur":112, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__22.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369150782, "dur":86, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Thread.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369150966, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-string-types.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369150563, "dur":554, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369150419, "dur":698, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/gfimntn8ka19.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369151163, "dur":138, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__16.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369151304, "dur":199, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369151133, "dur":370, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/1vckaeliv7hg.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369151552, "dur":346, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__13.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369152308, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/PlatformDetection.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369151908, "dur":514, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369151520, "dur":903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/uslrufcpltdy.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369152462, "dur":183, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__6.cpp" }}
+,{ "pid":12345, "tid":6, "ts":1715937369152946, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Thread.h" }}
+,{ "pid":12345, "tid":6, "ts":1715937369152656, "dur":590, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715937369152448, "dur":798, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/pwns2d58vm9k.o" }}
+,{ "pid":12345, "tid":6, "ts":1715937369153263, "dur":269, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369114331, "dur":315, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369114647, "dur":20265, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369134914, "dur":459, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UnityWebRequestModule_CodeGen.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369135373, "dur":740, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UnityWebRequestModule_CodeGen.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369136165, "dur":284, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369134913, "dur":1549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/b3dkc3muxfuw.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369136531, "dur":111, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreFontEngineModule_CodeGen.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369136669, "dur":158, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369136492, "dur":335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/sq9q6wk6wbml.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369136885, "dur":123, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.Physics2DModule_CodeGen.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137055, "dur":152, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369136860, "dur":348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/kjos998esov7.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137224, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.GameCenterModule_CodeGen.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137279, "dur":213, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.GameCenterModule_CodeGen.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137534, "dur":188, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137223, "dur":499, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/u0earr3xq15a.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137765, "dur":64, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.Collections_CodeGen.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137892, "dur":54, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137757, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/myznvw4c8lug.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137970, "dur":100, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System_CodeGen.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369138185, "dur":140, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369137960, "dur":365, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/zsfsifz84451.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369138349, "dur":84, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppMetadataUsage.c" }}
+,{ "pid":12345, "tid":7, "ts":1715937369138475, "dur":144, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369138338, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/co4k7yuufm5y.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369138634, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ftitpyp9x1qn.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369138797, "dur":185, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UnityWebRequestModule.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369138987, "dur":210, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369138787, "dur":410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/v90e7dd4v0fu.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369139226, "dur":129, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__9.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369139359, "dur":227, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369139215, "dur":371, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/x2swvl53l0xe.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369139620, "dur":322, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__4.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369140077, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-config.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369139946, "dur":484, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369139597, "dur":833, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/4bezfy1e5v0x.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369140450, "dur":153, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TilemapModule.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369140607, "dur":290, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369140440, "dur":457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/dlix3n3kca6k.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369140931, "dur":317, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreFontEngineModule.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369141482, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-string-types.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369141570, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/internal/sparsehashtable.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369141252, "dur":551, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369140921, "dur":882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ctjzjt1ef7mh.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369141848, "dur":145, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369142199, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/Posix/ThreadLocalValueImpl.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369141997, "dur":686, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369141824, "dur":859, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/xdcq5hjreywa.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369142712, "dur":135, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.TextMeshPro__4.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369143079, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Thread.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369142851, "dur":557, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369142701, "dur":707, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/evkmiwx3337s.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369143429, "dur":212, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.Burst.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369143645, "dur":225, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369143419, "dur":451, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/pjopav4ia3f7.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369143893, "dur":162, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System.Core__3.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369144065, "dur":259, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369143882, "dur":442, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/tinjzex5vwyb.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369144360, "dur":486, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System.Configuration.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369144857, "dur":569, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369144341, "dur":1085, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/r75e9e52t1qw.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369145459, "dur":186, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__18.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369145666, "dur":340, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369145445, "dur":561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/4d6woq9hdtin.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369146052, "dur":437, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__11.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369146503, "dur":173, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369146027, "dur":649, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/pz3u8dbxpys7.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369146710, "dur":125, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppInvokerTable.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369146845, "dur":79, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++" }}
+,{ "pid":12345, "tid":7, "ts":1715937369146934, "dur":305, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369146699, "dur":540, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/0higlm61jau8.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369147269, "dur":377, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Il2CppCCalculateTypeValues.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369147814, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/metadata/Il2CppGenericInstCompare.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369147665, "dur":401, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369147258, "dur":808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vh6b4vjxtt6t.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148112, "dur":115, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__48.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148231, "dur":224, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148076, "dur":379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/oih246mtardw.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148488, "dur":95, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__42.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148586, "dur":173, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148466, "dur":293, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/aczg9946qy4v.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148782, "dur":92, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__39.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148878, "dur":299, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369148769, "dur":408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/2vk7btbabaqk.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369149222, "dur":226, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__33.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369149453, "dur":433, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369149207, "dur":679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/op2lgwtnrhhk.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369149895, "dur":229, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__27.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369150178, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/metadata/Il2CppTypeCompare.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369150430, "dur":226, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Baselib_Lock_SemaphoreBased.inl.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369150128, "dur":534, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369149891, "dur":772, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/95wj3grx1eyq.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369150723, "dur":173, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__20.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369151143, "dur":90, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm-utils/VmStringUtils.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369151288, "dur":154, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/gc/WriteBarrier.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369151455, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Baselib_Lock_FutexBased.inl.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369150904, "dur":763, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369150691, "dur":976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/uruhn4scek8a.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369151709, "dur":138, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__11.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369152310, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/c-api/WaitStatus-c-api.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369151851, "dur":647, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369151681, "dur":817, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/oxefzwjufhqv.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369152550, "dur":199, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__5.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1715937369152945, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/ArchitectureDetection.h" }}
+,{ "pid":12345, "tid":7, "ts":1715937369152758, "dur":413, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715937369152526, "dur":645, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/oo3biyoasks5.o" }}
+,{ "pid":12345, "tid":7, "ts":1715937369153220, "dur":326, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369114302, "dur":331, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369114633, "dur":20265, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369135103, "dur":276, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule_CodeGen.c" }}
+,{ "pid":12345, "tid":8, "ts":1715937369135379, "dur":737, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule_CodeGen.c" }}
+,{ "pid":12345, "tid":8, "ts":1715937369136163, "dur":326, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369135102, "dur":1387, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/qyvvlbqccyxq.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369136586, "dur":319, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.SharedInternalsModule_CodeGen.c" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137099, "dur":112, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369136536, "dur":675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/0dpk0ly16ohr.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137211, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137265, "dur":70, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.AudioModule_CodeGen.c" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137335, "dur":173, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.AudioModule_CodeGen.c" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137551, "dur":211, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137264, "dur":498, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/h3j9ypj8l70d.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137820, "dur":53, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.Burst_CodeGen.c" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137960, "dur":136, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369137785, "dur":311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hmovw7ha9ttz.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369138139, "dur":74, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib_CodeGen.c" }}
+,{ "pid":12345, "tid":8, "ts":1715937369138234, "dur":106, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369138104, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/lldaobk50935.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369138512, "dur":107, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369138364, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/0m53nstny4v4.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369138655, "dur":545, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/__Generated.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369139329, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/BasicTypes.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369139430, "dur":90, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Memory.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369139533, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm-utils/Finally.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369139831, "dur":70, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Internal/Baselib_Lock_SemaphoreBased.inl.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369139913, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/type_traits.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369139290, "dur":687, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369138643, "dur":1335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/xjpaarn6w28y.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369140014, "dur":137, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__12.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369140698, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Alignment.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369140844, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/os/c-api/il2cpp-config-api-platforms.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369140158, "dur":769, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369140003, "dur":924, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/fkh6dhqdrk9a.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369140927, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369140995, "dur":84, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.SharedInternalsModule.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369141119, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-api-types.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369141224, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/Object.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369141484, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-runtime-metadata.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369141089, "dur":594, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369140977, "dur":706, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/8id22jyfcl3k.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369141737, "dur":238, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/UnityEngine.GameCenterModule.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369142088, "dur":91, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/C/Baselib_Timer.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369142196, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/metadata/Il2CppTypeCompare.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369141979, "dur":448, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369141718, "dur":709, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/291womvpn5xv.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369142466, "dur":124, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.VisualScripting.Core.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369142614, "dur":63, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++" }}
+,{ "pid":12345, "tid":8, "ts":1715937369142811, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm/MetadataCache.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369143080, "dur":70, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/dense_hash_map.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369142685, "dur":753, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369142454, "dur":984, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/bh3lqhzdu95w.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369143460, "dur":193, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Unity.2D.Animation.Runtime.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369143657, "dur":245, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369143447, "dur":455, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/bg59cadtnsyv.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369143922, "dur":166, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/System.Core__2.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369144096, "dur":282, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369143912, "dur":466, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/sa32ezg7ruhw.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369144420, "dur":162, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__8.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369144613, "dur":747, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369144393, "dur":967, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/lbcmrm697146.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369145376, "dur":592, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__2.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369145973, "dur":345, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369145369, "dur":950, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/74t0vpono9v6.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369146338, "dur":417, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/mscorlib__1.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369146847, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/BasicTypes.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369147386, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppError.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369146766, "dur":729, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369146328, "dur":1167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/6w9jba8ok7er.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369147515, "dur":165, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__8.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369147691, "dur":220, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369147505, "dur":406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/2xmtq8ei3w7a.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369147941, "dur":89, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__49.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369148309, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/google/sparsehash/type_traits.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369148039, "dur":334, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369147926, "dur":448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/9xkqkg1qdfpf.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369148420, "dur":101, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__43.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369148525, "dur":163, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369148406, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vr24ojj4tmgf.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369148723, "dur":92, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__4.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369148819, "dur":164, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369148713, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/afscv0rrqur9.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369149013, "dur":322, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__36.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369149350, "dur":426, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369149003, "dur":773, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vstewu2g1vl2.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369149832, "dur":280, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__29.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369150178, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/gc/GarbageCollector.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369150116, "dur":231, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369149800, "dur":548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/vtko35lt84qp.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369150393, "dur":150, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__23.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369150550, "dur":300, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369150368, "dur":482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/hn227836ocip.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369150889, "dur":215, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__19.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369151154, "dur":119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/external/baselib/Include/Internal/Compiler/CompilerEnvironmentClang.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369151286, "dur":65, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/il2cpp-api-types.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369151456, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm-utils/icalls/mscorlib/System.Threading/Interlocked.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369151117, "dur":697, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369150875, "dur":939, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/ork5uiwc6zru.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369151846, "dur":297, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/Generics__10.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369152457, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/IL2CPP/libil2cpp/vm-utils/VmThreadUtils.h" }}
+,{ "pid":12345, "tid":8, "ts":1715937369152157, "dur":497, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369151833, "dur":821, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/npuyeh3vbf9f.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369152691, "dur":181, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"/Users/fengting/Desktop/14132/cetext/Unity-iPhone/Unity-iPhone/Il2CppOutputProject/Source/il2cppOutput/GenericMethods__3.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1715937369152881, "dur":309, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715937369152675, "dur":515, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_iOS_arm64 zmq4/itwzmfwfm842.o" }}
+,{ "pid":12345, "tid":8, "ts":1715937369153212, "dur":319, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715937369157481, "dur":438, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 77516, "tid": 1, "ts": 1715937369169923, "dur": 530, "ph": "X", "name": "Wait for external events", "args": {"First to finish": "backend_profiler0.traceevents"} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369170462, "dur": 235, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369168398, "dur": 2865, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 77516, "tid": 1, "ts": 1715937369195019, "dur": 2371, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{}
+
+]
+}
