@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-unitymypoker/Pods-unitymypoker-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Adjust/Adjust.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit

@@ -1,12 +1,11 @@
 #import <UIKit/UIKit.h>
 #include  <UnityFramework/UnityFramework.h>
 #import "ViewController.h"
-
-#import <AppsFlyerLib/AppsFlyerLib.h>
+#import "Adjust.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 @class RootViewController;
 
-@interface AppController : NSObject <UIApplicationDelegate,UnityFrameworkListener, AppsFlyerLibDelegate>
+@interface AppController : NSObject <UIApplicationDelegate,UnityFrameworkListener,AdjustDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) UnityFramework *ufw;

@@ -1,7 +1,7 @@
 PODS:
-  - AppsFlyerFramework (6.13.1):
-    - AppsFlyerFramework/Main (= 6.13.1)
-  - AppsFlyerFramework/Main (6.13.1)
+  - Adjust (4.38.2):
+    - Adjust/Core (= 4.38.2)
+  - Adjust/Core (4.38.2)
   - FBAEMKit (17.0.0):
     - FBSDKCoreKit_Basics (= 17.0.0)
   - FBSDKCoreKit (17.0.0):
@@ -16,7 +16,7 @@ PODS:
   - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
-  - AppsFlyerFramework (= 6.13.1)
+  - Adjust
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -25,7 +25,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AppsFlyerFramework
+    - Adjust
     - FBAEMKit
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
@@ -35,7 +35,7 @@ SPEC REPOS:
     - SAMKeychain
 
 SPEC CHECKSUMS:
-  AppsFlyerFramework: 971521cf5b890c2afeab2f2c91734547b8b169ca
+  Adjust: 5a0f813fe079212bed61404d1f635cc330068b4a
   FBAEMKit: 31a20c2d8744d8c57d3a5b7ae4e27b4fdd819193
   FBSDKCoreKit: dac911b656816f8d0b06e5fa4bac60e89505bb3b
   FBSDKCoreKit_Basics: 92b7b7458d57091370b0b6cc197578874c3b4b16
@@ -44,6 +44,6 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: 72f78ed121c891e61a1e4b03ff831b1c2c3a6611
+PODFILE CHECKSUM: aaeaa1ef3b93a75957c667be8bf19365cc06d3f3
 
 COCOAPODS: 1.15.2

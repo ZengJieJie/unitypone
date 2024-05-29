@@ -5,7 +5,6 @@
 #import "SDKWrapper.h"
 #import "platform/ios/CCEAGLView-ios.h"
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
-#import <AppsFlyerLib/AppsFlyerLib.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 	
@@ -34,7 +33,7 @@ using namespace cocos2d;
 
 Application* app = nullptr;
 @synthesize window;
-
+static NSString* safstatuesstr = nil;
 #pragma mark -
 #pragma mark Application lifecycle
 
@@ -81,12 +80,11 @@ Application* app = nullptr;
     
     //run the cocos2d-x game scene
     app->start();
-    
-    [[AppsFlyerLib shared] setAppsFlyerDevKey:@"F8TeCyQ3rkv9TQ5BfnzvtQ"];
-    [[AppsFlyerLib shared] setAppleAppID:@"6499421950"];
-    [[AppsFlyerLib shared] waitForATTUserAuthorizationWithTimeoutInterval:20];
-    [AppsFlyerLib shared].delegate = self;
-    [[AppsFlyerLib shared] start];
+    NSString *yourAppToken = @"z6g1eorzp05c";
+    NSString *environment = ADJEnvironmentProduction;
+    ADJConfig *adjustConfig = [ADJConfig configWithAppToken:yourAppToken environment:environment allowSuppressLogLevel:YES];
+    [adjustConfig setDelegate:self];
+    [Adjust appDidLaunch:adjustConfig];
     return YES;
 }
 
@@ -95,10 +93,6 @@ Application* app = nullptr;
     [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url options:options];
     return YES;
 }
-
-
-
-
 
 #pragma mark - Unity
 
@@ -160,6 +154,7 @@ Application* app = nullptr;
     
     app->onPause();
     [[SDKWrapper getInstance] applicationWillResignActive:application];
+    [Adjust trackSubsessionEnd];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.5f*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         if (@available(iOS 14, *)) {
             if (ATTrackingManager.trackingAuthorizationStatus == ATTrackingManagerAuthorizationStatusNotDetermined) {
@@ -180,7 +175,7 @@ Application* app = nullptr;
     [[[self ufw] appController] applicationDidBecomeActive: application];
     app->onResume();
     [[SDKWrapper getInstance] applicationDidBecomeActive:application];
-
+    [Adjust trackSubsessionStart];
     [[FBSDKAppEvents shared] activateApp];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.5f*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         if (@available(iOS 14, *)) {
@@ -196,23 +191,15 @@ Application* app = nullptr;
     delete app;
     app = nil;
 }
-
-- (void)onConversionDataFail:(nonnull NSError *)error {
-    
-}
-
-- (void)onConversionDataSuccess:(nonnull NSDictionary *)conversionInfo {
-    NSString* status_str = [conversionInfo objectForKey:@"af_status"];
-    if (status_str == nil) {
-        status_str = @"";
++ (NSString *)getAfinfostatue {
+    ADJAttribution *attribution = [Adjust attribution];
+    if(attribution.network != nil){
+        safstatuesstr = attribution.network;//unattr
     }
-    self.afStatus = status_str;
-}
-
-
-- (NSString *)getAfStatus {
-   
-    return self.afStatus;
+    if (safstatuesstr == nil) {
+        safstatuesstr = @"";
+    }
+    return safstatuesstr;
 }
 
 + (void)configFBParams:(NSString *)fbId fbClientToken:(NSString *)fbClientToken
@@ -227,9 +214,10 @@ Application* app = nullptr;
             NSDictionary *retrievedDictionary = [defaults objectForKey:@"launchOptions"];
         [[FBSDKApplicationDelegate sharedInstance] application:[UIApplication sharedApplication] didFinishLaunchingWithOptions:retrievedDictionary];
         [[FBSDKAppEvents shared] logEvent:@"battledAnOrc"];
-          
+        
     }
 }
+
 
 + (void)sendFaceBookEvent:(NSString*)stype sun:(NSString*)para1 funs: (NSString*)para2 {
     NSLog(@"sendFaceBookEvent %@%@%@",stype,para1,para2);

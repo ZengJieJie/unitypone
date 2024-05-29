@@ -1,6 +1,5 @@
 #include "ViewController.h"
 #import <Foundation/Foundation.h>
-#import <AppsFlyerLib/AppsFlyerLib.h>
 #import "AppController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "CommonCrypto/CommonDigest.h"
@@ -13,18 +12,16 @@
 
 
 + (void)setloadview {
-//    FBSDKSettings.sharedSettings.appID = fbId;
-//    FBSDKSettings.sharedSettings.clientToken = fbClientToken;
-//    FBSDKSettings.sharedSettings.isAdvertiserIDCollectionEnabled=YES;
-//    FBSDKSettings.sharedSettings.isAutoLogAppEventsEnabled=YES;
-//    FBSDKSettings.sharedSettings.displayName=@"3Patti MyPoker";
+
     AppController *appDelegate = (AppController *)([UIApplication sharedApplication].delegate);
         [appDelegate showUnityView];
 }
 
 + (NSString *)getAppsFlyer {
-    return [[AppsFlyerLib shared] getAppsFlyerUID];
+    NSString *adid = [Adjust adid];
+    return adid;
 }
+
 
 
 +(NSString *)getDevice{

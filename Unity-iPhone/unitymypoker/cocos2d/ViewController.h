@@ -4,7 +4,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
+#import "Adjust.h"
 
 
 @interface ViewController : NSObject

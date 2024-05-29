@@ -10,11 +10,11 @@ target 'unitymypoker' do
 
   # Pods for unitymypoker
      pod 'Masonry'
-     pod 'AppsFlyerFramework','6.13.1'
      pod 'SAMKeychain'
      pod 'FBSDKLoginKit'
      pod 'FBSDKCoreKit'
      pod 'FBSDKShareKit'
+     pod 'Adjust'
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
